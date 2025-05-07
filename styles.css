@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url('https://media.cnn.com/api/v1/images/stellar/prod/210623180928-dubai-airport.jpg?q=w_1110,c_fill') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: rgba(248, 248, 247, 0.95);
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+  
+  
+  .h2 {
+    text-align: center;
+    color: #0B3C5D;
+    margin-bottom: 25px;
+  }
+  
+  .label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .input[type="text"], select, button, input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .input[type="date"] {
+    appearance: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    cursor: pointer;
+    filter: invert(0.5);
+  }
+  
+  .button[type="submit"] {
+    background-color: #051f30;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button[type="submit"]:hover {
+    background-color: #1D6FA3;
+  }
+  
+  .price-preview {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .output {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+  }
+  
