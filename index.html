@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservasi Tiket Pesawat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Reservasi Tiket Pesawat</h2>
+    <form id="flightForm">
+      <label for="airline">Maskapai Penerbangan:</label>
+      <select id="airline" name="airline" required onchange="isiKelas()">
+        <option value="">-- Pilih Maskapai --</option>
+        <option value="WiwiwiAirlines">WiwiwiAirlines</option>
+        <option value="UyayaAirWays">UyayaAirWays</option>
+        <option value="Bekasi Airlines">Bekasi Airlines</option>
+        <option value="Moonfly">Moonfly</option>
+        <option value="Flyme">Flyme</option>
+        <option value="VelocityAir">VelocityAir</option>
+        <option value="EagleEyes">EagleEyes</option>
+        <option value="Singaperbangsa">Singaperbangsa</option>
+      </select>
+
+      <label for="ticketClass">Tipe Kelas:</label>
+      <select id="ticketClass" name="ticketClass" required onchange="previewHarga()">
+        <option value="">-- Pilih Kelas --</option>
+      </select>
+
+      <div id="hargaPreview" class="price-preview"></div>
+
+      <label for="departureDate">Jadwal Keberangkatan:</label>
+      <input type="date" id="departureDate" name="departureDate" required>
+
+      <label for="departureAirport">Bandara Keberangkatan:</label>
+      <select id="departureAirport" name="departureAirport" required></select>
+
+      <label for="arrivalAirport">Bandara Tujuan:</label>
+      <select id="arrivalAirport" name="arrivalAirport" required></select>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+
+    <div class="output" id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
